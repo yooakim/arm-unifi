@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # exit on any error
 set -e
 
@@ -8,8 +9,12 @@ set -e
 # Add the UniFi repository to the sources list, using the following commands
 echo 'deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti' | sudo tee -a /etc/apt/sources.list.d/ubnt.list > /dev/null
 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50
-sudo apt-get update
-sudo apt-get upgrade -yqq
-sudo apt-get install unifi
+apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50
+apt-get update
+apt-get upgrade -y
+apt-get install unifi -y
+
+
+
+
 

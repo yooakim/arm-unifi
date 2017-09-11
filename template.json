@@ -112,7 +112,7 @@
                         "value": "bf-unifi"
                     },
                     "location": {
-                        "value": "westeurope"
+                        "value": "[resourceGroup().location]"
                     },
                     "fileUris": {
                         "value": [
