@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineName": {
+            "value": "bf-unifi"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "unifi"
+        },
+        "virtualNetworkName": {
+            "value": "bf-unifi-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "bf-unifi735"
+        },
+        "networkSecurityGroupName": {
+            "value": "bf-unifi-nsg"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHfQjizB9/6O4UqxYWm3p0NcQvNS3wU/tWoi2G/nyYA+NowIL//glXeyfZOQKGyDnrMS/wW1UYCHRPNyatBH1qPz9JoHy/Ilo+WR9wvdGdLK/83QkCs5tradthRaTMiOOazMylQ6RewRxDgRJ0oJTG30SIY3CVPl3bSNyEslVTs4v4fU70DJkSlOqsmiiwL6jwQktoueTJ93Val75A1gyrSuXoPOIfwevVbbtUEbYMQf43j1n7h/KNHLz0WjJpeTDUvofwNBnLP53REsfZsvj0z7jebdi9gKo7U+CijwalVUmVlETH4lw7/TeyepoXuX8runxRpNkAQnyhrsuf2+rL"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "bf-unifi-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        }
+    }
+}
